@@ -1,0 +1,57 @@
+@headerHeight: 50px;
+@footerHeight: 40px;
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.transitionable-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#head {
+  height: @headerHeight;
+  opacity: 0.5;
+}
+
+#body {
+  top: @headerHeight;
+  bottom: @footerHeight;
+}
+
+#foot {
+  height: @footerHeight;
+  bottom: 0;
+}
+
+#head, #foot {
+  line-height: 30px;
+  font-size: 26px;
+  z-index: 50;
+}
+
+#body div{
+  height:100%;
+  line-height: 150px;
+  font-size: 48px;
+}
+
+#h1, #h2, #p1, #p2, #p3, #p4, #f1, #f2 {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+#h1 {background-color: black; color: white;}
+#h2 {background-color: white;}
+#p1 {background-color: coral;}
+#p2 {background-color: royalblue;}
+#p3 {background-color: bisque;}
+#p4 {background-color: salmon;}
+#f1 {background-color: black; color: white;}
+#f2 {background-color: white;}

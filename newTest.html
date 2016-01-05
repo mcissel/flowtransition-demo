@@ -1,0 +1,20 @@
+<head>
+  <title>Flow-Transition</title>
+</head>
+
+<body>
+  {{> section name="head"}}
+  {{> section name="body"}}
+  {{> section name="foot"}}
+</body>
+
+<template name="head1"><div id="h1">head 1: This is home. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; click to go to<a href="/page2">&gt;Page2&lt;</a><br/></div></template>
+<template name="head2"><div id="h2">head 2: <a href="/">&gt;HOME&lt;</a><br/></div></template>
+
+<template name="page1"><div id="p1">This is: page 1<br/><a href="/page2">&gt;Go To: Page2&lt;</a><br/></div></template>
+<template name="page2"><div id="p2">This is: page 2<br/><a href="/page3">&gt;Go To: Page3&lt;</a><br/><a href="/page4">&gt;Go To: Page4&lt;</a></div></template>
+<template name="page3"><div id="p3">This is: page 3<br/><a href="/page4">&gt;Go To: Page4&lt;</a><br/></div></template>
+<template name="page4"><div id="p4">This is: page 4<br/><a href="/">&gt;Go To:HOME&lt;</a><br/></div></template>
+
+<template name="foot1"><div id="f1">foot 1<a href="/">&gt;HOME&lt;</a><br/></div></template>
+<template name="foot2"><div id="f2">foot 2<a href="/">&gt;HOME&lt;</a><br/></div></template>
